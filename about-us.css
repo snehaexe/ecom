@@ -1,0 +1,56 @@
+@import "nav.css";
+/*  CONTENT */
+
+.main{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 500px;
+    width: 100%
+}
+.txt h2{
+    font-size: 2.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 3.0rem;
+    margin: 15px 0px;
+}
+.txt p{
+    color:rgb(55, 52, 52);
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+.img{
+    width: 550px;
+    height: 600px;
+}
+.read-more{
+    color:rgb(14, 14, 14);
+    width: 150px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: solid;
+    font-size: 1rem;
+    border-radius: 2px;
+    transition: all ease 0.4s;
+}
+.read-more:hover{
+    background: rgb(14, 14, 14);
+    color: white;
+    border-color: rgb(14, 14, 14);
+}

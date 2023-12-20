@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* NAVIGATION */
+.head{
+    font-family: Playfair Display;
+    align-self: center;
+    background: rgb(231, 231, 231);
+    margin: auto;
+    width: 95%;
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    height: 75px;
+    position: sticky;
+    top: 50px;
+    z-index: 10;
+}
+#box1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    padding: 2px 2px;
+}
+td{
+    padding: 15px;
+}
+a{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color: rgb(15, 14, 14);
+}
+.nav{
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2rem;
+    font-family: Pacifico;
+    color:rgb(14, 14, 14);
+    font-weight: 700;
+}
+.order-now-btn{
+    font-family: Playfair Display;
+    color: rgb(14, 14, 14);
+    font-weight: 550;
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    border-radius: 80px;
+    border-style: solid;
+    transition: all ease 0.3s;
+}
+.order-now-btn:hover{
+    transform: scale(1.05);
+    background: rgb(14, 14, 14);
+    color: white;
+    border-radius: 80px;
+    border-style: solid;
+    border-color: black;
+}
+td a{
+    margin: 0px 4px;
+    padding: 5px 10px;
+    color:rgba(75, 75, 75, 0.999);
+    position: relative;
+    transition: all ease 0.3s;
+}
+td a:hover{
+    color: rgb(0, 0, 0);
+}
+td a::after{
+    content: ' ';
+    position: absolute;
+    height: 2px;
+    bottom: 5px;
+    left: 0%;
+    width: 0%;
+    transform: translateX(50);
+    border-radius: 7px;
+    background-color: rgb(15, 15, 15);
+    transition: all ease 0.3s;
+}
+td a:hover::after{
+    width: 100%;
+}
+.fa-star{
+    color: black;
+}

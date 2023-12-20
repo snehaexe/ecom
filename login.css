@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    background: url(/SOHO/home4.jpg)no-repeat;
+    background-size: cover;
+    font-family: serif;
+    height: 100vh;
+    overflow: hidden;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    /*Glassmorphism*/
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.7px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+.center{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt{
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 30px 0;
+}
+.txt input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #0e0e0e;
+}
+.txt input:focus ~ label,
+.txt input:valid ~ label{
+    top: -5px;
+    color: #0e0e0e;
+}
+.txt input:focus ~ span::before,
+.txt input:valid ~ span::before{
+    width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+input[type = "submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1.5px solid #0e0e0e;
+    background-color: #0e0e0e;
+    border-radius: 55px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type = "submit"]:hover{
+    border: 1.5px solid white;
+    color: black;
+    background-color: white;
+    transition: .5s;
+}
+.sign-up{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #272525;
+}
+.sign-up a{
+    color: #57376b;
+    text-decoration: none;
+}
+.sign-up a:hover{
+    text-decoration: underline;
+}
